@@ -12,9 +12,10 @@ function gen_data_parameters(n_pulsars, freq_start, bandwidth, start_mjd, end_mj
 	% by G. Gusso - gabriele.gusso@roma1.infn.it
 	% Department of Physics - Sapienza University - Rome
 
-	addpath(genpath("/nfsroot/home1/homedirs/gusso/Tesi_codici/MATLAB"));
+	addpath(genpath("/PATH/1d_convnext/data_generation"));
+ 	% Substitute PATH with your local path
 
-	file_name = "/nfsroot/home1/homedirs/gusso/Tesi_codici/MATLAB/data/tables/PulsarParametersMjd" + num2str(start_mjd) + "to" + num2str(end_mjd) + ".dat";
+	file_name = "/PATH/1d_convnext/data_generation/data/tables/PulsarParametersMjd" + num2str(start_mjd) + "to" + num2str(end_mjd) + ".dat";
 	if exist(file_name, "file")
 		delete(file_name)
 	end
