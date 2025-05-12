@@ -12,7 +12,7 @@ var_param = "h0";
 init_gusso(name_dir)
 
 train_val_ratio = 0.95; % train samples over val samples ratio
-n_pulsars = 2000; % (standard: 2000) - per ogni 1000 pulsars (1000 signal + 1000 noise) ci mette 1:40h ed occupa 2gb
+n_pulsars = 2000; % (standard for training: 2000, i.e. 1000 signal + 1000 noise)
 freq_start = 70; % in Hz (standard: 70)
 bandwidth = 0.1; % in Hz (standard: 0.1)
 time_band = 15; % days to take for each time series
@@ -65,7 +65,6 @@ parfor time_idx = 0:time_tot_bands-1
     fprintf("# start_mjd and end_mjd for the band n. %i: %i %i\n", [time_idx+1, start_mjd, end_mjd])
 
     %% GENERATE PULSAR PARAMETERS
-    % deve essere salvato diversamente per ogni nuovo PERIODO di dati
     gen_data_parameters(n_pulsars, freq_start, bandwidth, start_mjd, end_mjd);
 	rng('shuffle');
     min_idx = 1;
