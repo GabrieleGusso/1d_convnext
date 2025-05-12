@@ -1,7 +1,6 @@
 clear all;
-addpath(genpath('/PATH/1d_convnext/MATLAB'))
+addpath(genpath('/PATH/1d_convnext/data_generation'))
 delete(gcp('nocreate'))
-warning('off','MATLAB:mir_warning_maybe_uninitialized_temporary')
 
 % Script to generate the different test datasets in white Gaussian noise (10 test datasets for each parameter)
 % Substitute the above PATH with your local path
