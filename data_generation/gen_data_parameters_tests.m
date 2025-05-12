@@ -1,4 +1,4 @@
-function gen_data_parameters_var(n_pulsars, freq_start, bandwidth, start_mjd, end_mjd, var_value, var_param)
+function gen_data_parameters_tests(n_pulsars, freq_start, bandwidth, start_mjd, end_mjd, var_value, var_param)
 
 	%    n_pulsars   total number of pulsars to generate parameters for
 	%    freq_start  initial frequency of the first frequency band
