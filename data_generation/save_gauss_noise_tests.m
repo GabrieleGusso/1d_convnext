@@ -4,18 +4,18 @@ delete(gcp('nocreate'))
 warning('off','MATLAB:mir_warning_maybe_uninitialized_temporary')
 
 % Script to generate the different test datasets in white Gaussian noise (10 test datasets for each parameter)
-% Substitute PATH with your local path
+% Substitute the above PATH with your local path
 % Chose a name_dir of your preference, while remembering to change it while varying the value (var_value) of the current parameter (var_param)
 
 for ii = 1:10
-	name_dir = ['THESIS_TEST_gaussnoise_f_70-270_h0_' num2str(ii*5) 'e25_P_19_ecc_0_asini_1_cosi_0'];
+	name_dir = ['THESIS_TEST_gaussnoise_f_70-80_h0_' num2str(ii*5) 'e25_P_19_ecc_0_asini_1_cosi_0'];
 	var_value = ii*5*1e-25;
 	var_param = "h0";
 	init_gusso(name_dir)
 
 	train_val_ratio = 0; % train samples over val samples ratio
-	n_pulsars = 2000; % (standard: 2000, i.e. 1000 signal + 1000 noise
-	freq_start = 90; % Hz (standard: 70)
+	n_pulsars = 100; % (standard for test dataset: 100, i.e. 100 signal + 100 noise -> 200*21 = 4200)
+	freq_start = 70; % Hz (standard: 70)
 	bandwidth = 0.1; % Hz (standard: 0.1)
 	time_band = 15; % days to take for each time series
 	time_tot_bands = 0; % number of time bands to take (if 0 takes the whole run)
