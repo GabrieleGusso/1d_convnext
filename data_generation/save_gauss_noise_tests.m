@@ -67,7 +67,7 @@ for ii = 1:10
 		fprintf("# start_mjd and end_mjd for the band n. %i: %i %i\n", [time_idx+1, start_mjd, end_mjd])
 
 		%% GENERATE PULSAR PARAMETERS
-		gen_data_parameters_var(n_pulsars, freq_start, bandwidth, start_mjd, end_mjd, var_value, var_param);
+		gen_data_parameters_tests(n_pulsars, freq_start, bandwidth, start_mjd, end_mjd, var_value, var_param);
 		rng('shuffle');
 		min_idx = 1;
 		max_idx = n_pulsars;
