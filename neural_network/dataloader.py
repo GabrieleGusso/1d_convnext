@@ -201,19 +201,12 @@ def matlab_loader(path: str) -> Any:
     # open path as file to avoid ResourceWarning
     with open(path, "rb") as f:
         dictionary = io.loadmat(f)
-        # sample = dictionary.get("sn").astype("float32")
         sample = np.log(dictionary.get("sn"))
-        estremo_inferiore = np.log(
-            1e-6
-        )  # HARD CODED (più basso di qualunque plateau spettrale del noise, più alto del segnale inutile del noise numerico osì da tagliarlo fuori) riferiti ai valori shiftati con l'einstein factor di sergio (~1e-20)
-        estremo_superiore = np.log(
-            1e-2
-        )  # HARD CODED (più alto del massimo del segnale, più basso dei modi di violino, più alto del plateau spettrale per ogni frequenza considerata) riferiti ai valori shiftati con l'einstein factor di sergio (~1e-20)
+        estremo_inferiore = np.log(1e-6)  # hard coded for the dataset scaled of a factor 1e+20
+        estremo_superiore = np.log(1e-2)  # hard coded for the dataset scaled of a factor 1e+20
         sample = (
             (sample - estremo_inferiore) / (estremo_superiore - estremo_inferiore)
-        ).astype(
-            "float32"
-        )  # normalizzazione
+        ).astype("float32")  # normalization
         return sample
 
 
