@@ -17,6 +17,7 @@ python -m torch.distributed.launch --nnodes=1 --nproc_per_node=3 main.py \
 	--nb_classes 2 \
 	--data_set "THESIS_gaussnoise_f_70-270_h0_2e24_P_19_ecc_0_asini_1-19_cosi_0" \
 	--output_dir "/PATH/1d_convnext/results/TrainG_h0" \
+        --ROC_eval True \
 	--auto_resume False \
 	--disable_eval False \
 	--iter_eval False \
