@@ -1,4 +1,5 @@
-# KARPAHY TESTS
+# by G. Gusso - gabriele.gusso@roma1.infn.it
+# Department of Physics - Sapienza University - Rome
 
 import os, glob, re
 import torch
