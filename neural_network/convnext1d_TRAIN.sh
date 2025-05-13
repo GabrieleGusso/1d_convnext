@@ -26,4 +26,4 @@ python -m torch.distributed.launch --nnodes=1 --nproc_per_node=3 main.py \
 
 python /PATH/1d_convnext/neural_network/plot_graphs.py \
 
-python /PATH/1d_convnext/neural_network/mean_std_run.py \
+python /PATH/1d_convnext/neural_network/mean_std_val.py \
