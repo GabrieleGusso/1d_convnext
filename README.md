@@ -27,32 +27,32 @@ The present repository is organized into three main directories, each serving a 
 The directory structure is defined as follows (directories marked with an asterisk are generated automatically during execution):
 
 ```
-database/
-├── dataset_name*/            # Automatically generated dataset directory
-│   ├── plots*/               # Automatically generated visualizations
-│   ├── train*/               # Training data
-│   └── val*/                 # Validation data
-├── results/                  # Output results
-│   └── history/              # Training history and logs
+database
+├── dataset_name*            # Automatically generated dataset directory
+│   ├── plots*               # Automatically generated visualizations
+│   ├── train*               # Training data
+│   └── val*                 # Validation data
+└── results                  # Output results
+    └── history              # Training history and logs
 
-data_generation/
-├── functions/                # Supporting functions for data generation
-├── my_Snag/                  # Custom modules or scripts
-└── data/
-    └── tables/               # Raw input tables or metadata
+data_generation
+├── functions                # Supporting functions for data generation
+├── my_Snag                  # Custom modules or scripts
+└── data
+    └── tables               # Raw input tables or metadata
 
-neural_network/
-├── models/                   # Model architectures and configurations
-├── plots/                    # Evaluation and diagnostic plots
-└── TEST_eval/                # Evaluation results
-    ├── TrainG_ap/
-    ├── TrainG_e/
-    ├── TrainG_h0/
-    ├── TrainG_P/
-    ├── TrainR_ap/
-    ├── TrainR_e/
-    ├── TrainR_h0/
-    └── TrainR_P/
+neural_network
+├── models                   # Model architectures and configurations
+├── plots                    # Evaluation and diagnostic plots
+└── TEST_eval                # Evaluation results
+    ├── TrainG_ap
+    ├── TrainG_e
+    ├── TrainG_h0
+    ├── TrainG_P
+    ├── TrainR_ap
+    ├── TrainR_e
+    ├── TrainR_h0
+    └── TrainR_P
 ```
 
 
