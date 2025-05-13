@@ -60,7 +60,7 @@ neural_network
 
 ### MATLAB
 
-MATLAB version R2023b
+MATLAB version R2023b\
 Download Snag (vers. 2, rel. 25 November 2022) from https://www.sergiofrasca.net/wp-content/wwwContent/_Phys/snag.htm
 
 ### Python
