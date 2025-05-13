@@ -43,7 +43,7 @@ do
             output_file="/PATH/1d_convnext/neural_network/TEST_eval/${trained_model}/TEST_TrainG-ap.txt"
         fi
 
-        CUDA_VISIBLE_DEVICES=1 python -m torch.distributed.launch --nnodes=1 --nproc_per_node=1 --master_port=29501 main_new.py \
+        CUDA_VISIBLE_DEVICES=1 python -m torch.distributed.launch --nnodes=1 --nproc_per_node=3 main_new.py \
             --model convnext_tiny \
             --drop_path 0.1 \
             --smoothing 0 \
