@@ -10,7 +10,7 @@ import matplotlib.font_manager as fm
 from matplotlib.ticker import ScalarFormatter
 from models.convnext import convnext_tiny, convnext_tiny
 
-# Change PATH with your paths
+# Change PATH with your paths (also for the two font_path)
 
 data_path = "/PATH/1d_convnext/results/history/"
 plot_path = "/PATH/1d_convnext/neural_network/plots/"
@@ -91,7 +91,7 @@ def get_latest_file(date, train_val):
     return latest_file
 
 def image_font(size):
-	font_path = "/nfsroot/home1/homedirs/gusso/miniconda3/envs/convnext/fonts/times.ttf"  # Modify with the actual path
+	font_path = "/PATH/miniconda3/envs/convnext/fonts/times.ttf"  # Modify with the actual path
 	font_prop = fm.FontProperties(fname=font_path)
 	plt.rcParams['font.family'] = font_prop.get_name()
 	plt.rcParams.update({
@@ -495,7 +495,7 @@ def overfitting_small_dataset(data_path, plot_path, date):
 	print_errorbar = False
 
 	for loss_acc in ["loss", "acc"]:
-		font_path = "/nfsroot/home1/homedirs/gusso/miniconda3/envs/convnext/fonts/times.ttf"  # Modify with the actual path
+		font_path = "/PATH/miniconda3/envs/convnext/fonts/times.ttf"  # Modify with the actual path
 		font_prop = fm.FontProperties(fname=font_path)
 		plt.rcParams['font.family'] = font_prop.get_name()
 		plt.rcParams.update({
