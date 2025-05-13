@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 from matplotlib.ticker import ScalarFormatter
 
-# Change PATH with your paths
+# Change PATH with your paths (also for the font_path)
 
 data_path = "/PATH/1d_convnext/neural_network/TEST_eval/" # Modify with your path
 plot_path = "/PATH/1d_convnext/neural_network/plots/" # Modify with your path
