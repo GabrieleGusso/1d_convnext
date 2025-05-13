@@ -1,3 +1,6 @@
+# by G. Gusso - gabriele.gusso@roma1.infn.it
+# Department of Physics - Sapienza University - Rome
+
 import os
 import re
 import numpy as np
