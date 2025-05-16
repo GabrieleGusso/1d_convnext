@@ -1,6 +1,6 @@
 # README
 
-The current repository is used in the Master thesis work "A novel machine-learning based method to search for continuous-wave signals from neutron stars in binary systems" of Gabriele Gusso, Paola Leaci and Federico Muciaccia.
+The current repository is used in the Master thesis work "A novel machine-learning based method to search for continuous-wave signals from neutron stars in binary systems" of Gabriele Gusso, supervised by Paola Leaci and Federico Muciaccia.
 
 We present a novel machine learning procedure for the detection of continuous gravitational waves (CWs) emitted by neutron stars in binary systems. The method targets the characteristic double-horn spectral signature arising from orbital Doppler modulation, using a deep convolutional neural network adapted from the ConvNeXt architecture. The network classifies Earth-Doppler-corrected power spectra into signal-plus-noise or noise-only categories, operating within a semi-coherent detection scheme. Our analysis focuses on a fixed sky position corresponding to Scorpius X-1 and assumes negligible spin-down.
 
@@ -86,7 +86,7 @@ conda install pytorch torchvision torchaudio cpuonly -c pytorch
 **torchmetrics 1.4.0.post0**  
 conda install -c conda-forge torchmetrics
 
-**torchvision 0.18.1**
+**torchvision 0.18.1**  
 conda install pytorch torchvision -c pytorch -c conda-forge
 
 **pytorch-cuda 12.1**  
@@ -101,16 +101,16 @@ conda install -c conda-forge scikit-learn
 **pandas**  
 conda install pandas
 
-**num_tools 0.11.0**
+**num_tools 0.11.0**  
 conda install -c conda-forge enum_tools
 
-**receptive_field**
+**receptive_field**  
 pip install git+https://github.com/Fangyh09/pytorch-receptive-field.git
 
-**timm**
+**timm**  
 conda install conda-forge::timm
 
-**to install the other dependencies**
+**to install the other dependencies**  
 python3 -m pip install --user numpy matplotlib torch scikit-learn
 
 ## EXECUTION
